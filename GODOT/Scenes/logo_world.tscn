@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2ix3h76y0665"]
+
+[sub_resource type="Environment" id="Environment_32oup"]
+
+[node name="LOGO World" type="Node3D"]
+
+[node name="Enviroment" type="Node3D" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Enviroment"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Enviroment"]
+environment = SubResource("Environment_32oup")
+
+[node name="Atom" type="Node3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Atom"]
